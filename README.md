@@ -40,53 +40,24 @@ A full-stack task management web application where users can create projects, as
 
 ---
 
-## Project Structure
+## API Routes
 
-```plaintext
-team-task-manager/
-│
-├── client/
-│   ├── src/
-│   │   ├── api/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── styles/
-│   │   └── App.jsx
-│
-├── server/
-│   ├── config/
-│   ├── controllers/
-│   ├── middleware/
-│   ├── routes/
-│   │
-│   └── server.js
-│
-└── README.md
+### Auth Routes
 
- API Routes
-
- Auth Routes
-
-| Method | Endpoint | Description |
-|--------|-----------|-------------|
-| POST | `/api/auth/register` | Register User |
-| POST | `/api/auth/login` | Login User |
+POST `/api/auth/register` — Register User  
+POST `/api/auth/login` — Login User  
 
 ---
 
- Project Routes
+### Project Routes
 
-| Method | Endpoint | Description |
-|--------|-----------|-------------|
-| GET | `/api/projects` | Get Projects |
-| POST | `/api/projects` | Create Project |
+GET `/api/projects` — Get Projects  
+POST `/api/projects` — Create Project  
 
 ---
 
- Task Routes
+### Task Routes
 
-| Method | Endpoint | Description |
-|--------|-----------|-------------|
-| GET | `/api/tasks` | Get Tasks |
-| POST | `/api/tasks` | Create Task |
-| PUT | `/api/tasks/:id` | Update Task Status |
+GET `/api/tasks` — Get Tasks  
+POST `/api/tasks` — Create Task  
+PUT `/api/tasks/:id` — Update Task Status  
