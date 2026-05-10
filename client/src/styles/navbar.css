@@ -1,0 +1,8 @@
+.navbar {
+  background: #333;
+  padding: 10px;
+}
+.navbar a {
+  color: white;
+  margin-right: 15px;
+}
